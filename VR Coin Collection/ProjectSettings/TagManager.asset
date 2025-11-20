@@ -9,6 +9,10 @@ TagManager:
   - End
   - Effect
   - Weapon
+  - UICard
+  - Hit
+  - Hand
+  - 'Ball '
   layers:
   - Default
   - TransparentFX
