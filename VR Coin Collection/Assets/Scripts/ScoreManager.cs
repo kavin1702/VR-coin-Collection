@@ -5,7 +5,10 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
 
-    public int score = 0;
+    public int score = 0;          // total score
+    public int positiveCount = 0;  // number of positive balls hit
+
+    [Header("UI")]
     public TextMeshProUGUI scoreText;
 
     private void Awake()
@@ -13,10 +16,24 @@ public class ScoreManager : MonoBehaviour
         Instance = this;
     }
 
-    public void AddScore(int amount)
+    private void Start()
     {
-        score += amount;
-        scoreText.text = "Score: " + score;
+        UpdateScoreUI();
+    }
+
+    public void AddScore(int value)
+    {
+        score += value;
+
+        if (value > 0)
+            positiveCount++;
+
+        UpdateScoreUI();
+    }
+
+    void UpdateScoreUI()
+    {
+        if (scoreText != null)
+            scoreText.text = "Score: " + score;
     }
 }
-    
