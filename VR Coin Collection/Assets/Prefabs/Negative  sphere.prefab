@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3086462773207342388}
   - component: {fileID: 6046389606331026920}
   - component: {fileID: 4834370658890143198}
+  - component: {fileID: 7785486961604024711}
   m_Layer: 0
   m_Name: Negative  sphere
   m_TagString: 'Ball '
@@ -121,5 +122,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3475c47a2f3013d47a2c76f06e752ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  value: -1
+  isPositive: 0
+--- !u!114 &7785486961604024711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8995968383916916651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff7b9370ace35e498955163410de957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
