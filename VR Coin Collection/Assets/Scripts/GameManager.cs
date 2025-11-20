@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public GameObject gameOverPanel;
+    
 
     public TextMeshProUGUI finalScoreText;
     public TextMeshProUGUI positiveBallText;
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f; // pause game
 
         gameOverPanel.SetActive(true);
+        
+
 
         finalScoreText.text = "Final Score: " + ScoreManager.Instance.score;
         positiveBallText.text = "Positive Balls Caught: " + ScoreManager.Instance.positiveCount;
