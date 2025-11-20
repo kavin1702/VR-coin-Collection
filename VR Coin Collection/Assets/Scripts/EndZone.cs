@@ -6,6 +6,7 @@ public class EndZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("player Entered the zone !!");
             GameManager.Instance.GameOver();
         }
     }
